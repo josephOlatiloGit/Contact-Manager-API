@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="/signup.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <body>
+        <div class="headder">
+            <h2>Please Signup</h2>
+        </div>
+
+    <div class="container">
+        <form id="parent" action="/users/register" method="POST">
+        <label for="first-name">
+            <input type="text" name="username" placeholder="username" id="username" />
+            <p id="firstValid" class="valid">valid</p>
+            <p id="firstError" class="invalid">invalid</p>
+        </label>
+        <label for="email">
+            <input type="email" name="email" placeholder="email" id="email" />
+            <p id="emailValid" class="valid">valid</p>
+            <p id="emailError" class="invalid">invalid</p>
+        </label>
+        <label for="password">
+            <input
+            type="password"
+            name="password"
+            placeholder="password"
+            id="password"
+            />
+            <p id="str" class="str"></p>
+            <p id="passValid" class="valid">valid</p>
+            <p id="passError" class="invalid">invalid</p>
+        </label>
+        <label for="confirm-password">
+            <input type="password" placeholder="confirm password" id="confirm" />
+            <p id="conValid" class="valid">valid</p>
+            <p id="conPassError" class="invalid">invalid</p>
+        </label>
+
+        <button id="btn-sub" type="submit">Signup</button>
+        <p>Already have an account? <a href="/login">Login</a></p>
+        </form>
+         
+         </div>
+
+        <script src="./signup.js"></script>
+   
+  </body>
+</html>

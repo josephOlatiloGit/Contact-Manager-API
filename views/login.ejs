@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/login.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <body>
+    
+
+    <div class="container">
+        <h2>Login</h2>
+            <form id="parent" action="/users/login" method="POST">
+            <label for="email">
+                <input type="email" name="email" placeholder="email" id="email" />
+                <p id="emailValid" class="valid">valid</p>
+                <p id="emailError" class="invalid">invalid</p>
+            </label>
+            <label for="password">
+                <input
+                type="password"
+                name="password"
+                placeholder="password"
+                id="password"
+                />
+                <p id="str" class="str"></p>
+                <p id="passValid" class="valid">valid</p>
+                <p id="passError" class="invalid">invalid</p>
+            </label>
+            <label for="confirm-password">
+                <input type="password" placeholder="confirm password" id="confirm" />
+                <p id="conValid" class="valid">valid</p>
+                <p id="conPassError" class="invalid">invalid</p>
+            </label>
+            <button id="btn-sub" type="submit">Login</button>
+            <p>Don't have an account? <a href="/signup">Signup</a></p>
+            </form>
+        </div>
+
+        <script src="/login.js"></script>
+  
+  </body>
+</html>

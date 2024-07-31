@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headder{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50vh;
+    margin-top: 6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding:20px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 16rem;
+    height: 2.5rem;
+    padding-left: 2rem;
+    border-radius: 5px;
+    border-width: thin;
+}
+
+/* p{
+    font-size: 20pxm;
+    font-weight: 300;
+}
+
+a{
+    font-size: 20px;
+    font-weight: 300; 
+} */
+
+button {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 7px;
+    border-width: thin;
+    cursor: pointer;
+}
+
+.valid {
+    color: green;
+    display: none;
+}
+
+.invalid {
+    color: red;
+    display: none;
+}
+
+.str {
+    display: none;
+}
+
+.lessThanIdeal {
+    display: block;
+    color: orange;
+}
+
+.weak{
+    display: block;
+    color: yellow;
+}
+
+.good{
+    display:block;
+    color:green;
+}
