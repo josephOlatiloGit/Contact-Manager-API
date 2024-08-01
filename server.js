@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 
+
 connectDb()
 
 const app = express()
@@ -46,3 +47,5 @@ app.get("/signup", (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on ${port}`)
 }) 
+
+// console
